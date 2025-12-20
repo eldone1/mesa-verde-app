@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gestion_prestamos?serverTimezone=America/Lima&allowPublicKeyRetrieval=true&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ${password}          #Cambiar a ${password}
+    hikari:
+      maximum-pool-size: 10         # Numero maximo de conexiones en el pool
+      minimum-idle: 5               # Minimo de conexiones inactivas
+      idle-timeout: 600000          # Tiempo (ms) antes de cerrar una conexion inactiva
+      max-lifetime: 1800000         # Tiempo maximo de vida (ms) de una conexion
+      connection-timeout: 30000     # Tiempo de espera para obtener una conexion
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 20                 # Agrupa hasta 20 operaciones en lote (inserciones/actualizaciones)
+        order_inserts: true              # Ordena las inserciones para optimizar el rendimiento del batch
+        order_updates: true              # Ordena las actualizaciones para mejorar el uso del batch
+
+logging:
+  level:
+    root: INFO
+    org.hibernate.orm.jdbc.bind: TRACE         # Muestra los valores que se envian a los parametros ?
+    org.hibernate.orm.jdbc.extract: TRACE    # Muestra los valores que se extraen desde la BD
+    org.hibernate.type.descriptor.sql: TRACE   # Para ver mas detalles de tipos
+
+security:
+  jwt:
+    secret: uHdmPmDqKF6cNOSRY03YN81jYPZVRPNYQfLV0OEOoP0fgilWV4cntA20ZEljI_k7_MwQPFcy9Jm9d1noApTOjw
+    access-token-expiration: 9000000
+    refresh-token-expiration: 900000
