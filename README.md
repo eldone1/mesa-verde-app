@@ -27,17 +27,17 @@ Mesa Verde es una **API REST** para la gestión integral de operaciones bancaria
 
 ---
 
-## ✨ Características
+##  Características
 
-- 🔐 Autenticación y autorización con **JWT** (Access Token + Refresh Token)
-- 👤 Gestión de **clientes** y **usuarios** con roles
-- 🏛️ Registro y consulta de **bancos**
-- 💳 Manejo de **cuentas bancarias** con soporte multidivisa (PEN, USD, EUR, etc.)
-- 💸 Operaciones de **depósito**, **transferencia interna** e **interbancaria**
-- 📋 Gestión de **préstamos** con tabla de amortización (cuotas)
-- 📊 Historial de **movimientos** por cuenta con saldo antes/después
-- 🔍 Documentación interactiva con **Swagger UI / OpenAPI 3**
-- 🗂️ Auditoría automática de creación y actualización de registros
+-  Autenticación y autorización con **JWT** (Access Token + Refresh Token)
+-  Gestión de **clientes** y **usuarios** con roles
+-  Registro y consulta de **bancos**
+-  Manejo de **cuentas bancarias** con soporte multidivisa (PEN, USD, EUR, etc.)
+-  Operaciones de **depósito**, **transferencia interna** e **interbancaria**
+-  Gestión de **préstamos** con tabla de amortización (cuotas)
+-  Historial de **movimientos** por cuenta con saldo antes/después
+-  Documentación interactiva con **Swagger UI / OpenAPI 3**
+-  Auditoría automática de creación y actualización de registros
 
 ---
 
@@ -321,15 +321,11 @@ mesaverde/
 
 ---
 
-## 📬 Contacto
 
 | | |
 |---|---|
 | **Proyecto** | Mesa Verde — Sistema Bancario |
-| **Email** | diego.dme966@gmail.com |
-| **Soporte** | https://mesaverde.org/support |
 | **Institución** | Cibertec |
-
 ---
 
 <p align="center">Hecho con ❤️ usando Spring Boot · Java 21 · MySQL</p>
