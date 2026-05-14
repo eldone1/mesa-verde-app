@@ -328,4 +328,4 @@ mesaverde/
 | **Institución** | Cibertec |
 ---
 
-<p align="center">Hecho con ❤️ usando Spring Boot · Java 21 · MySQL</p>
+<p align="center">Sistema realizado como proyecto academico.</p>
